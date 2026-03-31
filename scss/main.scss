@@ -1,0 +1,8 @@
+@use 'variables';
+@use 'mixins';
+@use 'layout';
+
+// Base styles pour structure avec flex et grid
+.container-fluid {
+  max-width: 1200px;
+}

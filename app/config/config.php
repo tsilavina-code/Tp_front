@@ -1,11 +1,11 @@
 <?php
 return [
-    'app_name' => '',
+    'app_name' => 'Supermarket Cash Register',
     'debug' => true,
     // Configuration de la base de données
     'db' => [
         'host' => 'localhost',
-        'dbname' => '',
+        'dbname' => 'caisse_supermarket',
         'user' => 'root',      
         'pass' => ''           
     ]

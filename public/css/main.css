@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  background-color: #eef2f7;
+  color: #212529;
+  min-height: 100vh;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.25rem;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: 600;
+}
+
+.app-header a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.app-main {
+  flex: 1;
+  padding: 1.25rem;
+  width: 100%;
+  max-width: none;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 1.25rem;
+}
+
+@media (max-width: 1600px) {
+  .app-main {
+    grid-template-columns: 260px 1.1fr;
+  }
+}
+@media (max-width: 1400px) {
+  .app-main {
+    grid-template-columns: 240px 1fr;
+    padding: 1rem;
+  }
+}
+@media (max-width: 1200px) {
+  .app-main {
+    grid-template-columns: 220px 1fr;
+    gap: 1rem;
+  }
+}
+@media (max-width: 992px) {
+  .app-main {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .app-header,
+  .app-footer {
+    text-align: center;
+  }
+  .app-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .app-main {
+    padding: 0.9rem;
+  }
+}
+@media (max-width: 576px) {
+  .app-main {
+    padding: 0.65rem;
+    gap: 0.8rem;
+  }
+  .card-body {
+    padding: 0.85rem;
+  }
+}
+.card {
+  background: #fff;
+  border: 1px solid #e8ebf0;
+  border-radius: 0.6rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  width: 100%;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-title {
+  margin: 0 0 0.8rem;
+  font-size: 1.2rem;
+  color: #0056b3;
+}
+
+.menu-caisse {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-caisse li + li {
+  margin-top: 0.5rem;
+}
+
+.menu-caisse a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.menu-caisse a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.app-footer {
+  margin-top: auto;
+  padding: 0.75rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #6f788a;
+  background: #fff;
+  border-top: 1px solid #eef1f5;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+thead th {
+  text-align: left;
+  padding: 0.65rem 0.7rem;
+  font-weight: 700;
+  color: #3f4e63;
+  border-bottom: 1px solid #e6eaf2;
+}
+
+tbody td {
+  padding: 0.55rem 0.7rem;
+  border-bottom: 1px solid #edf1f6;
+}
+
+.container-fluid {
+  max-width: 1200px;
+}
+
+/*# sourceMappingURL=main.css.map */

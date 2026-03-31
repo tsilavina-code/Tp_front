@@ -1,5 +1,5 @@
 CREATE DATABASE IF NOT EXISTS caisse_supermarket;
-
+Use caisse_supermarket;
 -- Table Produit
 CREATE TABLE IF NOT EXISTS Produit (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -33,3 +33,23 @@ CREATE TABLE IF NOT EXISTS Achat (
 -- Indexes de performance
 CREATE INDEX idx_achat_caisse ON Achat(caisse_id);
 CREATE INDEX idx_achat_produit ON Achat(produit_id);
+
+-- Données d'exemple
+INSERT INTO Produit (designation, prix, quantite_stock) VALUES
+('Pain', 1.20, 150),
+('Lait 1L', 0.95, 80),
+('Oeufs (boîte 12)', 2.50, 60),
+('Riz 1kg', 1.80, 120),
+('Sucre 1kg', 1.30, 95);
+
+INSERT INTO Caisse (nom, emplacement) VALUES
+('Caisse principale', 'Entrée'),
+('Caisse secondaire', 'Aile gauche'),
+('Caisse nocturne', 'Entrée arrière');
+
+INSERT INTO Achat (caisse_id, produit_id, quantite, prix_unit) VALUES
+(1, 1, 3, 1.20),
+(1, 2, 2, 0.95),
+(2, 4, 1, 1.80),
+(2, 5, 2, 1.30),
+(3, 3, 1, 2.50);

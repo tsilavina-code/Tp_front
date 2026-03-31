@@ -1,6 +1,7 @@
-/opt/lampp/bin/php -S localhost:8000 -t /opt/lampp/htdocs/L2/S4/S4-design/Tp-Front/public
+/opt/lampp/bin/php -S localhost:8000 -t /opt/lampp/htdocs/L2/S4/S4-design/Tp_front/public
 
-http://localhost:8000/index.php 
+http://localhost:8000 
+
 sudo /opt/lampp/bin/mysql -u root -p
 
 
